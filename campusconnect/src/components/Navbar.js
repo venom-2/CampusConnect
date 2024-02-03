@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
     const location = useLocation();
-
+    
     return (
         <div>
             <nav class="flex items-center justify-between flex-wrap bg-slate-800 p-6">
@@ -18,19 +18,19 @@ const Navbar = () => {
                 </div>
                 <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                     <div class="text-sm lg:flex-grow">
-                        <Link to="/findcollege" class={location.pathname === "/findcollege" ? "text-white block mt-4 lg:inline-block lg:mt-0 ":"block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"}>
+                        <Link to="/findcollege" class={location.pathname === "/findcollege" ? " text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4":"block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"}>
                             Find a College
                         </Link>
-                        <Link to="/notes" class={location.pathname === "/notes" ? "text-white block mt-4 lg:inline-block lg:mt-0 " : "block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"}>
+                        <Link to="/notes" class={location.pathname === "/notes" ? " text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4" : "block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"}>
                             Notes
                         </Link>
-                        <Link to="/projects" class={location.pathname === "/projects" ? "text-white block mt-4 lg:inline-block lg:mt-0 " : "block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"}>
+                        <Link to="/projects" class={location.pathname === "/projects" ? " text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 " : "block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"}>
                             Projects
                         </Link>
-                        <Link to="/job" class={location.pathname === "/job" ? "text-white block mt-4 lg:inline-block lg:mt-0" : "block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"}>
+                        <Link to="/job" class={location.pathname === "/job" ? " text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4" : "block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"}>
                             Job Openings
                         </Link>
-                        <Link to="/aboutus" class={location.pathname === "/aboutus" ? "text-white block mt-4 lg:inline-block lg:mt-0" : "block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"}>
+                        <Link to="/aboutus" class={location.pathname === "/aboutus" ? " text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4" : "block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"}>
                             About Us
                         </Link>
                     </div>
