@@ -29,7 +29,7 @@ const Navbar = () => {
                         <div
                             class="fixed top-0 right-0 z-40 h-full w-[75%] translate-x-full overflow-y-auto overscroll-y-none transition duration-500 peer-checked:translate-x-0"
                         >
-                            <div class="float-right min-h-full max-w-[85%] md:w-[45%] bg-slate-800 px-6 pt-12 shadow-2xl">
+                            <div class="float-right min-h-full w-[50%] md:w-[50%] max-[640px]:w-[65%] bg-slate-800 px-6 pt-12 shadow-2xl">
                                 <menu>
                                     <li><Link to="/" class="text-white">Home</Link></li>
                                     <li><Link to="/findcollege" class="text-white">Find a College</Link></li>
@@ -37,12 +37,12 @@ const Navbar = () => {
                                     <li><Link to="/projects" class="text-white">Projects</Link></li>
                                     <li><Link to="/jobopenings" class="text-white">Job Openings</Link></li>
                                     <li><Link to="/jobopenings" class="text-white">About Us</Link></li>
-                                    <div class="flex">
+                                    <div class="flex max-[390px]:flex-col">
                                         <div>
-                                            <Link to="/signin" class="inline-block flex-auto text-sm px-2 py-2 mr-2 leading-none border rounded text-black border-white hover:border-transparent hover:text-slate-950 bg-slate-300 hover:bg-slate-400 mt-4 lg:mt-0">Sign In</Link>
+                                            <Link to="/signin" class="inline-block flex-auto text-sm px-2 py-2 mr-2 max-[390px]:flex-none leading-none border rounded text-black border-white hover:border-transparent hover:text-slate-950 bg-slate-300 hover:bg-slate-400 mt-4 lg:mt-0">Sign In</Link>
                                         </div>
                                         <div>
-                                            <Link to="/register" class="inline-block flex-auto text-sm px-2 py-2 leading-none border rounded text-black border-white hover:border-transparent hover:text-slate-950 bg-slate-300 hover:bg-slate-400 mt-4 lg:mt-0">Create an Account</Link>
+                                            <Link to="/register" class="inline-block flex-auto text-sm px-2 py-2 max-[390px]:flex-none leading-none border rounded text-black border-white hover:border-transparent hover:text-slate-950 bg-slate-300 hover:bg-slate-400 mt-4 lg:mt-0">Register</Link>
                                         </div>
                                     </div>
                                 </menu>
@@ -72,7 +72,7 @@ const Navbar = () => {
                         <Link to="/signin" class="inline-block text-sm px-4 py-2 leading-none border rounded text-black border-white hover:border-transparent hover:text-slate-950 bg-slate-300 hover:bg-slate-400 mt-4 lg:mt-0 mx-2">Sign In</Link>
                     </div>
                     <div>
-                        <Link to="/register" class="inline-block text-sm px-4 py-2 leading-none border rounded text-black border-white hover:border-transparent hover:text-slate-950 bg-slate-300 hover:bg-slate-400 mt-4 lg:mt-0">Create an Account</Link>
+                        <Link to="/register" class="inline-block text-sm px-4 py-2 leading-none border rounded text-black border-white hover:border-transparent hover:text-slate-950 bg-slate-300 hover:bg-slate-400 mt-4 lg:mt-0">Register</Link>
                     </div>
                 </div>
             </nav>
