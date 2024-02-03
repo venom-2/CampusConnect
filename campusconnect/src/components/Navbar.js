@@ -1,6 +1,9 @@
 import React from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
+    const location = useLocation();
+
     return (
         <div>
             <nav class="flex items-center justify-between flex-wrap bg-slate-800 p-6">
@@ -15,27 +18,27 @@ const Navbar = () => {
                 </div>
                 <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                     <div class="text-sm lg:flex-grow">
-                        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                        <Link to="/findcollege" class={location.pathname === "/findcollege" ? "text-white block mt-4 lg:inline-block lg:mt-0 ":"block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"}>
                             Find a College
-                        </a>
-                        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                        </Link>
+                        <Link to="/notes" class={location.pathname === "/notes" ? "text-white block mt-4 lg:inline-block lg:mt-0 " : "block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"}>
                             Notes
-                        </a>
-                        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                        </Link>
+                        <Link to="/projects" class={location.pathname === "/projects" ? "text-white block mt-4 lg:inline-block lg:mt-0 " : "block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"}>
                             Projects
-                        </a>
-                        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                        </Link>
+                        <Link to="/job" class={location.pathname === "/job" ? "text-white block mt-4 lg:inline-block lg:mt-0" : "block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"}>
                             Job Openings
-                        </a>
-                        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+                        </Link>
+                        <Link to="/aboutus" class={location.pathname === "/aboutus" ? "text-white block mt-4 lg:inline-block lg:mt-0" : "block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"}>
                             About Us
-                        </a>
+                        </Link>
                     </div>
                     <div>
-                        <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-black border-white hover:border-transparent hover:text-slate-950 bg-slate-300 hover:bg-slate-400 mt-4 lg:mt-0 mx-2">Sign In</a>
+                        <Link to="/signin" class="inline-block text-sm px-4 py-2 leading-none border rounded text-black border-white hover:border-transparent hover:text-slate-950 bg-slate-300 hover:bg-slate-400 mt-4 lg:mt-0 mx-2">Sign In</Link>
                     </div>
                     <div>
-                        <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-black border-white hover:border-transparent hover:text-slate-950 bg-slate-300 hover:bg-slate-400 mt-4 lg:mt-0">Create an Account</a>
+                        <Link to="/register" class="inline-block text-sm px-4 py-2 leading-none border rounded text-black border-white hover:border-transparent hover:text-slate-950 bg-slate-300 hover:bg-slate-400 mt-4 lg:mt-0">Create an Account</Link>
                     </div>
                 </div>
             </nav>
