@@ -51,7 +51,7 @@ const Navbar = () => {
                     </label>
                 </div>
                 <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto max-lg:hidden">
-                    <div class="text-sm lg:flex-grow lg:justify-center">
+                    <div class="text-sm lg:flex-grow lg: flex justify-center">
                         <Link to="/findcollege" class={location.pathname === "/findcollege" ? " text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4" : "block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"}>
                             Find a College
                         </Link>
@@ -64,7 +64,7 @@ const Navbar = () => {
                         <Link to="/job" class={location.pathname === "/job" ? " text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4" : "block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"}>
                             Job Openings
                         </Link>
-                        <Link to="/aboutus" class={location.pathname === "/aboutus" ? " text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4" : "block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"}>
+                        <Link to="/aboutus" class={location.pathname === "/aboutus" ? " text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4" : "block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"}>
                             About Us
                         </Link>
                     </div>
