@@ -1,30 +1,31 @@
-import './App.css';
-import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from './Pages/Home';
-import College from './Pages/College';
-import Notes from './Pages/Notes';
-import Projects from './Pages/Projects';
-import JobOpenings from './Pages/JobOpenings';
-import About from './Pages/AboutUs';
-import CreateAccount from './Pages/CreateAccount';
-import SignIn from './Pages/SignIn';
+import React from "react";
+import "./App.css";
+import { Provider } from "react-redux";
+import { createStore, applyMiddleware, compose } from "redux";
+import thunk from "redux-thunk";
+import { reducer } from "./store/reducer";
+
+import Header from "./Components/header";
+import Main from "./Components/main";
+import Information from "./Components/information";
+import Section from "./Components/section";
+import Footer from "./Components/footer";
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)));
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route exact path='/' element={<Home/>}/>
-        <Route exact path='/findcollege' element={<College/>}/>
-        <Route exact path='/notes' element={<Notes/>}/>
-        <Route exact path='/projects' element={<Projects/>}/>
-        <Route exact path='/job' element={<JobOpenings/>}/>
-        <Route exact path='/aboutus' element={<About/>}/>
-        <Route exact path='/signin' element={<SignIn/>}/>
-        <Route exact path='/register' element={<CreateAccount/>}/>
-      </Routes>
-    </Router>
+    <div className="App">
+      <Provider store={store}>
+        <Header />
+        <Main />
+        <Information />
+        <Section />
+        <Footer />
+      </Provider>
+    </div>
   );
 }
 
