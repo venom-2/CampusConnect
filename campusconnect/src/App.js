@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import { createStore, applyMiddleware, compose } from "redux";
 import thunk from "redux-thunk";
 import { reducer } from "./store/reducer";
-
+ 
 import Header from "./Components/header";
 import Main from "./Components/main";
 import Information from "./Components/information";
