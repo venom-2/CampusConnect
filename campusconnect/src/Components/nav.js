@@ -107,7 +107,7 @@ function Nav() {
             <strong>Login</strong>
           </li>
           <li className="nav-element nav-element-main">
-            <strong>SingUp</strong>
+            <strong>Sign Up</strong>
           </li>
         </ul>
       </div>
