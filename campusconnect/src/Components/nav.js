@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const NavStyled = styled.div`
   .content-nav {
@@ -25,6 +26,7 @@ export const NavStyled = styled.div`
     border-radius: 3em;
     margin: 12px 24px;
     cursor: pointer;
+    font-weight: bold;
   }
 
   .line {
@@ -85,19 +87,30 @@ export const NavStyled = styled.div`
     }
   }
 `;
+
+const linkStyle = {
+  textDecoration: "none",
+  color: 'gray',
+};
 function Nav() {
   return (
     <NavStyled>
       <div className="content-nav">
         <ul className="options options-left">
           <li className="nav-element">
-            <strong>Features</strong>
+            <Link to="/findcollege" style={linkStyle}>Find a College</Link>
           </li>
           <li className="nav-element">
-            <strong>Pricing</strong>
+            <Link to="/notes" style={linkStyle}>Notes</Link>
           </li>
           <li className="nav-element">
-            <strong>Resources</strong>
+            <Link to="/project" style={linkStyle}>Projects</Link>
+          </li>
+          <li className="nav-element">
+            <Link to="/jobopenings" style={linkStyle}>Job Openings</Link>
+          </li>
+          <li className="nav-element">
+            <Link to="/about" style={linkStyle}>About Us</Link>
           </li>
         </ul>
 
