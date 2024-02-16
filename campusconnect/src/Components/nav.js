@@ -117,10 +117,10 @@ function Nav() {
         <ul className="options options-right">
           <li className="line"></li>
           <li className="nav-element">
-            <strong>Login</strong>
+            <Link to="/login" style={linkStyle}>Login</Link>
           </li>
           <li className="nav-element nav-element-main">
-            <strong>Sign Up</strong>
+            <Link to="/signup" style={linkStyle}>Sign Up</Link>
           </li>
         </ul>
       </div>

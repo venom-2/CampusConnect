@@ -5,6 +5,7 @@ import Nav from "./nav";
 
 import logo from "../images/logo.svg";
 import menu from "../images/menu.svg";
+import {Link} from "react-router-dom";
 
 export const HeaderStyled = styled.div`
   padding: 2em 0em 0.5em 0em;
@@ -61,7 +62,7 @@ class Header extends React.Component {
       <HeaderStyled>
         <Wrapper>
           <div className="content-header">
-            <img src={logo} alt="logo" />
+            <Link to="/"><img src={logo} alt="logo" /></Link>
             {(this.state.open || this.state.width >= 1200) && <Nav />}
             <span className="icon-menu" onClick={this.handleClickMenu}>
               <img src={menu} alt="icon-menu" />

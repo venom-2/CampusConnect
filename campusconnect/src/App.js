@@ -16,6 +16,9 @@ import FindCollege from "./Pages/FindCollege";
 import JobOpenings from "./Pages/JobOpenings";
 import Notes from "./Pages/Notes";
 import Project from "./Pages/Project";
+import Home from "./Pages/Home";
+import Login from "./Pages/Login";
+import Signup from "./Pages/SignUp";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -33,11 +36,14 @@ function App() {
           <Footer />
         </Provider>
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/findcollege" element={<FindCollege />} />
+          <Route path="/findcollege" element={<FindCollege/>} />
           <Route path="/project" element={<Project />} />
           <Route path="/jobopenings" element={<JobOpenings />} />
           <Route path="/notes" element={<Notes />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </Router>
     </div>

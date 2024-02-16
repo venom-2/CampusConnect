@@ -136,14 +136,14 @@ class Form extends React.Component {
           <input
             className="input-link"
             name="input-link"
-            placeholder="Shorten a link here"
+            placeholder="Search your College"
             value={this.state.text}
             onChange={this.handleChange}
           />
           {this.state.alert && <div className="alert">{this.state.alert}</div>}
 
           <div className="btn-shorten" onClick={this.handleClick}>
-            Shorten it!
+            Search!
           </div>
         </div>
       </FormStyled>

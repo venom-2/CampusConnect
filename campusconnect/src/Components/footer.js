@@ -101,23 +101,23 @@ function Footer() {
               <p className="detail-title">
                 <strong>Features</strong>
               </p>
-              <p className="detail-element">Link Shortening</p>
-              <p className="detail-element">Branded Links</p>
-              <p className="detail-element">Analytics</p>
+              <p className="detail-element">Notes Repository</p>
+              <p className="detail-element">Exposure</p>
+              <p className="detail-element">Job Listings</p>
             </div>
             <div className="group-detail">
               <p className="detail-title">
                 <strong>Resources</strong>
               </p>
-              <p className="detail-element">Blog</p>
-              <p className="detail-element">Developers</p>
-              <p className="detail-element">Suport</p>
+              <p className="detail-element">Notes</p>
+              <p className="detail-element">Projects</p>
+              <p className="detail-element">Support</p>
             </div>
             <div className="group-detail">
               <p className="detail-title">
                 <strong>Company</strong>
               </p>
-              <p className="detail-element">About</p>
+              <p className="detail-element">About Us</p>
               <p className="detail-element">Our Team</p>
               <p className="detail-element">Careers</p>
               <p className="detail-element">Contact</p>

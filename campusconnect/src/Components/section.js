@@ -40,7 +40,7 @@ function Section() {
     <SectionStyled image={bgBoostMobile} imageDesktop={bgBoostDesktop}>
       <div className="content">
         <p className="text">
-          <strong>Boost your links today</strong>
+          <strong>Connect with Us!!</strong>
         </p>
         <div>
           <BtnCta text="Get Started" />

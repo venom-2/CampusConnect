@@ -58,7 +58,7 @@ export const MainStyled = styled.div`
     }
 
     .description-content h1 {
-      font-size: 3em;
+      font-size: 2em;
     }
 
     .description {
@@ -90,10 +90,9 @@ function Main() {
 
         <Wrapper>
           <div className="description-content">
-            <h1>More that just shorter Links</h1>
+            <h1>A Portal for Students, Campuses and Startups</h1>
             <p className="description">
-              Build your brand’s recognition and get detailed insights on how
-              your links are performing.
+            Our platform serves as a hub for collaboration, fostering a dynamic community.
             </p>
             <div className="btn-content">
               <BtnCta text="Get Started" />

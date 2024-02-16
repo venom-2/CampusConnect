@@ -53,35 +53,31 @@ function Information() {
       <Wrapper>
         <Form />
         <ResultList />
-        <h1>Advanced Statistics</h1>
+        <h1>Campus Connectivity</h1>
         <p className="description">
-          Track how your links are performing across the web with our advanced
-          statistics dashboard.
+        Join us today and unlock a world of possibilities at your fingertips!
         </p>
 
         <div className="card-list">
           <Card
             icon={icon01}
-            title="Brand Recognition"
-            description="Boost your brand recognition with each click. Generic links don’t 
-        mean a thing. Branded links help instil confidence in your content."
+            title="Notes Repository"
+            description=" Dive into a vast collection of meticulously organized notes, spanning various subjects and topics, contributed by fellow students across campuses."
             line={false}
           />
           <Card
             marginTop="6em"
             icon={icon02}
-            title="Detailed Records"
-            description="Gain insights into who is clicking your links. Knowing when and where 
-            people engage with your content helps inform better decisions."
+            title="Job Listings"
+            description="Browse through a diverse range of internships, part-time positions, and full-time job openings tailored specifically for students across campuses."
             line={true}
           />
           <Card
             marginTop="8em"
             className="margin-2"
             icon={icon03}
-            title="Fully Customizable"
-            description="Improve brand awareness and content discoverability through customizable 
-            links, supercharging audience engagement."
+            title="Ecosystem For Colleges"
+            description=" Explore array of resources, from shared knowledge hubs to collaborative projects, to enhance the academic and extracurricular experiences."
             line={true}
           />
         </div>
