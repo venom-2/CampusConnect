@@ -1,16 +1,16 @@
 import React from "react";
 import "./App.css";
-import { Provider } from "react-redux";
-import { createStore, applyMiddleware, compose } from "redux";
-import thunk from "redux-thunk";
-import { reducer } from "./store/reducer";
+// import { Provider } from "react-redux";
+// import { createStore, applyMiddleware, compose } from "redux";
+// import thunk from "redux-thunk";
+// import { reducer } from "./store/reducer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import Header from "./Components/header";
-import Main from "./Components/main";
-import Information from "./Components/information";
-import Section from "./Components/section";
-import Footer from "./Components/footer";
+// import Header from "./Components/header";
+// import Main from "./Components/main";
+// import Information from "./Components/information";
+// import Section from "./Components/section";
+// import Footer from "./Components/footer";
 import About from "./Pages/AboutUs";
 import FindCollege from "./Pages/FindCollege";
 import JobOpenings from "./Pages/JobOpenings";
@@ -20,21 +20,21 @@ import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import Signup from "./Pages/SignUp";
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+// const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)));
+// const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)));
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Provider store={store}>
+        {/* <Provider store={store}>
           <Header />
           <Main />
           <Information />
           <Section />
           <Footer />
-        </Provider>
+        </Provider> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
