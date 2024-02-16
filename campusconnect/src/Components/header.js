@@ -4,6 +4,7 @@ import Wrapper from "./wrapper";
 import Nav from "./nav";
 
 import logo from "../images/logo.svg";
+import Logo from "../images/logo.png";
 import menu from "../images/menu.svg";
 import {Link} from "react-router-dom";
 
@@ -62,7 +63,7 @@ class Header extends React.Component {
       <HeaderStyled>
         <Wrapper>
           <div className="content-header">
-            <Link to="/"><img src={logo} alt="logo" /></Link>
+            <Link to="/"><img src={Logo} alt="logo" /></Link>
             {(this.state.open || this.state.width >= 1200) && <Nav />}
             <span className="icon-menu" onClick={this.handleClickMenu}>
               <img src={menu} alt="icon-menu" />

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Wrapper from "./wrapper";
-import logoWhite from "../images/logo-white.svg";
+import Logowhite from "../images/logo-white.png";
 import iconFacebook from "../images/icon-facebook.svg";
 import iconTwitter from "../images/icon-twitter.svg";
 import iconPinterest from "../images/icon-pinterest.svg";
@@ -94,7 +94,7 @@ function Footer() {
       <Wrapper>
         <div className="footer-grid">
           <div className="logo">
-            <img src={logoWhite} alt="logo-white" />
+            <img src={Logowhite} alt="logo" />
           </div>
           <div className="content">
             <div className="group-detail">

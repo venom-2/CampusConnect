@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Header from "../Components/header"
 
 const FindCollege = () => {
   return (
-    <div>FindCollege</div>
+    <div>
+      <Header/>
+    </div>
   )
 }
 
