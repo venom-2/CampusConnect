@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from "../Components/header"
-import "./Login.css"
 
 const Login = () => {
   return (
@@ -36,11 +35,11 @@ const Login = () => {
                   <a href="#!">Forgot password?</a>
                 </div>
 
-                {/* <!-- Submit button --> */}
+                {/* <!-- Submit button --> */} 
                 <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
 
                 <div class="divider d-flex align-items-center my-4">
-                  <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+                  <p class="text-center fw-bold mx-auto mb-0 text-muted">OR</p>
                 </div>
 
                 <a class="btn btn-primary btn-lg btn-block" style={{backgroundColor: "#3b5998"}} href="#!"
