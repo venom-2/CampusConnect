@@ -14,6 +14,13 @@ html {
   --grayish-violet: hsl(257, 7%, 63%);
   --very-dark-blue: hsl(255, 11%, 22%);
   --very-dark-violet: hsl(260, 8%, 14%);
-
+  --background-color: #2acfcf;
   --background: #f0f1f6;
 }
+
+.backgroundColor{
+  background-color: var(--background-color);
+  color: white;
+}
+
+
