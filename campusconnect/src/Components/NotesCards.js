@@ -38,6 +38,19 @@ const NotesCards = () => {
             date : "3 days ago"
           },
       ];
+      const download = (url) => {
+        const pdfUrl = `http://localhost:3000/${url}`;
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "Resume.pdf"; // specify the filename
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+    const view = (url)=>{
+      const pdfUrl = `http://localhost:3000/${url}`;
+      window.open(pdfUrl,'_blank')
+    }
   return (
     <div>
         
@@ -52,8 +65,8 @@ const NotesCards = () => {
               <h5 class="card-title">{item.collegeName}</h5>
               <hr/>
               <p class="card-text">{item.des}</p>
-              <a href="#" download="notes.pdf" class="btn backgroundColor">Download</a>
-              <a href="#" class="btn btn-secondary mx-3">View</a>
+              <a href="#" class="btn backgroundColor" onClick={()=>{download("Resume.pdf")}}>Download</a>
+              <a href="#" class="btn btn-secondary mx-3" onClick={()=>{view("Resume.pdf")}}>View</a>
             </div>
           </div>
         </div>
